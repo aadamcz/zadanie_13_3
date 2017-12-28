@@ -18,14 +18,14 @@ process.stdin.on("readable", function() {
 	if (input !== null) {
 		var instruction = input.toString().trim();
 		switch (instruction) {
-			case ("/exit"):
+			case "/exit":
 				process.stdout.write("Quitting app!\n");
 				process.exit();
 				break;
-			case ("node version"):
+			case "node version":
 				process.stdout.write(process.versions.node);
 				break;
-			case ("operating system"):
+			case "operating system":
 				process.stdout.write(process.env.OS);
 				break;
 			default:
