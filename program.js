@@ -22,10 +22,10 @@ process.stdin.on("readable", function() {
 				process.stdout.write("Quitting app!\n");
 				process.exit();
 				break;
-			case "node version":
+			case "/nodeVersion":
 				process.stdout.write(process.versions.node);
 				break;
-			case "operating system":
+			case "/operatingSystem":
 				process.stdout.write(process.env.OS);
 				break;
 			default:
